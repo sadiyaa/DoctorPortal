@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231F28B2B699EB6BD3A0D372 /* Pods_DoctorPortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44732F15C34E41815D415B1F /* Pods_DoctorPortalTests.framework */; };
+		29074DBFBE57C9308C052FAB /* Pods_DoctorPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8964FE7299EA3DDF2C137B /* Pods_DoctorPortal.framework */; };
+		41B76A4B3085EF4CD698AA57 /* Pods_DoctorPortalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B999FF87F1DB3AA1FC73824 /* Pods_DoctorPortalUITests.framework */; };
+		5137D5801E71ED41006CCE3F /* doctorportal_300x200.png in Resources */ = {isa = PBXBuildFile; fileRef = 5137D57F1E71ED41006CCE3F /* doctorportal_300x200.png */; };
+		5137D5821E71FA8F006CCE3F /* health-portal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5137D5811E71FA8F006CCE3F /* health-portal-icon.png */; };
+		5137D5841E722C78006CCE3F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5137D5831E722C78006CCE3F /* DashboardViewController.swift */; };
+		5137D5861E722DC5006CCE3F /* Doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5137D5851E722DC5006CCE3F /* Doctor.jpg */; };
+		5137D58A1E723661006CCE3F /* appointment-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5137D5891E723661006CCE3F /* appointment-icon.jpg */; };
+		5137D58C1E7236FC006CCE3F /* videoCall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5137D58B1E7236FC006CCE3F /* videoCall.jpg */; };
+		5137D58E1E723812006CCE3F /* labReport.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5137D58D1E723812006CCE3F /* labReport.jpeg */; };
+		5137D5901E723B94006CCE3F /* lABrEPORT.png in Resources */ = {isa = PBXBuildFile; fileRef = 5137D58F1E723B94006CCE3F /* lABrEPORT.png */; };
+		5137D5921E723C2B006CCE3F /* aPPOINTMENT.png in Resources */ = {isa = PBXBuildFile; fileRef = 5137D5911E723C2B006CCE3F /* aPPOINTMENT.png */; };
+		5137D5941E72516E006CCE3F /* SCHEDULE.png in Resources */ = {isa = PBXBuildFile; fileRef = 5137D5931E72516D006CCE3F /* SCHEDULE.png */; };
+		5137D5961E726565006CCE3F /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5137D5951E726565006CCE3F /* DoctorViewController.swift */; };
+		5137D5991E7271A5006CCE3F /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 5137D5981E7271A5006CCE3F /* stars.png */; };
+		51D246071E73BA38006F20B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D246061E73BA37006F20B8 /* GoogleService-Info.plist */; };
+		51FB3B041E710E43008FC5B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B031E710E43008FC5B7 /* AppDelegate.swift */; };
+		51FB3B061E710E44008FC5B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B051E710E44008FC5B7 /* ViewController.swift */; };
+		51FB3B091E710E44008FC5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FB3B071E710E44008FC5B7 /* Main.storyboard */; };
+		51FB3B0B1E710E45008FC5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FB3B0A1E710E45008FC5B7 /* Assets.xcassets */; };
+		51FB3B0E1E710E45008FC5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FB3B0C1E710E45008FC5B7 /* LaunchScreen.storyboard */; };
+		51FB3B191E710E47008FC5B7 /* DoctorPortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B181E710E47008FC5B7 /* DoctorPortalTests.swift */; };
+		51FB3B241E710E47008FC5B7 /* DoctorPortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B231E710E47008FC5B7 /* DoctorPortalUITests.swift */; };
+		51FB3B321E71123F008FC5B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B311E71123F008FC5B7 /* SignUpViewController.swift */; };
+		DB99D1A01E771B0600DBD005 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */; };
+		DB99D1A21E7779AF00DBD005 /* exampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */; };
+		DB99D1A41E77960100DBD005 /* Doctor1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB99D1A31E77960100DBD005 /* Doctor1.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51FB3B151E710E47008FC5B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51FB3AF81E710E43008FC5B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51FB3AFF1E710E43008FC5B7;
+			remoteInfo = DoctorPortal;
+		};
+		51FB3B201E710E47008FC5B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51FB3AF81E710E43008FC5B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51FB3AFF1E710E43008FC5B7;
+			remoteInfo = DoctorPortal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09C0A45495F09F941E610668 /* Pods-DoctorPortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalTests/Pods-DoctorPortalTests.release.xcconfig"; sourceTree = "<group>"; };
+		44732F15C34E41815D415B1F /* Pods_DoctorPortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorPortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5137D57F1E71ED41006CCE3F /* doctorportal_300x200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctorportal_300x200.png; sourceTree = "<group>"; };
+		5137D5811E71FA8F006CCE3F /* health-portal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health-portal-icon.png"; sourceTree = "<group>"; };
+		5137D5831E722C78006CCE3F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5137D5851E722DC5006CCE3F /* Doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Doctor.jpg; sourceTree = "<group>"; };
+		5137D5891E723661006CCE3F /* appointment-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "appointment-icon.jpg"; path = "../appointment-icon.jpg"; sourceTree = "<group>"; };
+		5137D58B1E7236FC006CCE3F /* videoCall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = videoCall.jpg; path = ../videoCall.jpg; sourceTree = "<group>"; };
+		5137D58D1E723812006CCE3F /* labReport.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = labReport.jpeg; path = ../labReport.jpeg; sourceTree = "<group>"; };
+		5137D58F1E723B94006CCE3F /* lABrEPORT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lABrEPORT.png; path = ../lABrEPORT.png; sourceTree = "<group>"; };
+		5137D5911E723C2B006CCE3F /* aPPOINTMENT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aPPOINTMENT.png; path = ../aPPOINTMENT.png; sourceTree = "<group>"; };
+		5137D5931E72516D006CCE3F /* SCHEDULE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SCHEDULE.png; path = ../SCHEDULE.png; sourceTree = "<group>"; };
+		5137D5951E726565006CCE3F /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorViewController.swift; path = ../DoctorViewController.swift; sourceTree = "<group>"; };
+		5137D5981E7271A5006CCE3F /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		51D246061E73BA37006F20B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51FB3B001E710E43008FC5B7 /* DoctorPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorPortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FB3B031E710E43008FC5B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51FB3B051E710E44008FC5B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51FB3B081E710E44008FC5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51FB3B0A1E710E45008FC5B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51FB3B0D1E710E45008FC5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51FB3B0F1E710E45008FC5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FB3B141E710E47008FC5B7 /* DoctorPortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorPortalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FB3B181E710E47008FC5B7 /* DoctorPortalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPortalTests.swift; sourceTree = "<group>"; };
+		51FB3B1A1E710E47008FC5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FB3B1F1E710E47008FC5B7 /* DoctorPortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorPortalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FB3B231E710E47008FC5B7 /* DoctorPortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPortalUITests.swift; sourceTree = "<group>"; };
+		51FB3B251E710E47008FC5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FB3B311E71123F008FC5B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5B999FF87F1DB3AA1FC73824 /* Pods_DoctorPortalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorPortalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C8964FE7299EA3DDF2C137B /* Pods_DoctorPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E18BFCE1C7A521E415F5FBE /* Pods-DoctorPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal.debug.xcconfig"; sourceTree = "<group>"; };
+		BBB72713B710C801D598B9FC /* Pods-DoctorPortalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C31AF877F069E8647E8BD556 /* Pods-DoctorPortalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleViewController.swift; sourceTree = "<group>"; };
+		DB99D1A31E77960100DBD005 /* Doctor1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Doctor1.jpg; sourceTree = "<group>"; };
+		EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortal.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal.release.xcconfig"; sourceTree = "<group>"; };
+		FBFCE14B4E88947D3A7A7A96 /* Pods-DoctorPortalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalTests/Pods-DoctorPortalTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51FB3AFD1E710E43008FC5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29074DBFBE57C9308C052FAB /* Pods_DoctorPortal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FB3B111E710E47008FC5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231F28B2B699EB6BD3A0D372 /* Pods_DoctorPortalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FB3B1C1E710E47008FC5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B76A4B3085EF4CD698AA57 /* Pods_DoctorPortalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2938684AFCEEBE24BADDAC36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E18BFCE1C7A521E415F5FBE /* Pods-DoctorPortal.debug.xcconfig */,
+				EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */,
+				FBFCE14B4E88947D3A7A7A96 /* Pods-DoctorPortalTests.debug.xcconfig */,
+				09C0A45495F09F941E610668 /* Pods-DoctorPortalTests.release.xcconfig */,
+				C31AF877F069E8647E8BD556 /* Pods-DoctorPortalUITests.debug.xcconfig */,
+				BBB72713B710C801D598B9FC /* Pods-DoctorPortalUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5137D5971E726DE9006CCE3F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5137D57F1E71ED41006CCE3F /* doctorportal_300x200.png */,
+				5137D5851E722DC5006CCE3F /* Doctor.jpg */,
+				5137D58B1E7236FC006CCE3F /* videoCall.jpg */,
+				5137D5891E723661006CCE3F /* appointment-icon.jpg */,
+				5137D58D1E723812006CCE3F /* labReport.jpeg */,
+				5137D58F1E723B94006CCE3F /* lABrEPORT.png */,
+				5137D5911E723C2B006CCE3F /* aPPOINTMENT.png */,
+				5137D5931E72516D006CCE3F /* SCHEDULE.png */,
+				5137D5811E71FA8F006CCE3F /* health-portal-icon.png */,
+				5137D5981E7271A5006CCE3F /* stars.png */,
+				DB99D1A31E77960100DBD005 /* Doctor1.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		51FB3AF71E710E43008FC5B7 = {
+			isa = PBXGroup;
+			children = (
+				51FB3B021E710E43008FC5B7 /* DoctorPortal */,
+				51FB3B171E710E47008FC5B7 /* DoctorPortalTests */,
+				51FB3B221E710E47008FC5B7 /* DoctorPortalUITests */,
+				51FB3B011E710E43008FC5B7 /* Products */,
+				2938684AFCEEBE24BADDAC36 /* Pods */,
+				AE16A0CF187EFF637A496232 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		51FB3B011E710E43008FC5B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51FB3B001E710E43008FC5B7 /* DoctorPortal.app */,
+				51FB3B141E710E47008FC5B7 /* DoctorPortalTests.xctest */,
+				51FB3B1F1E710E47008FC5B7 /* DoctorPortalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51FB3B021E710E43008FC5B7 /* DoctorPortal */ = {
+			isa = PBXGroup;
+			children = (
+				51D246061E73BA37006F20B8 /* GoogleService-Info.plist */,
+				51FB3B031E710E43008FC5B7 /* AppDelegate.swift */,
+				51FB3B051E710E44008FC5B7 /* ViewController.swift */,
+				51FB3B071E710E44008FC5B7 /* Main.storyboard */,
+				DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */,
+				DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */,
+				5137D5831E722C78006CCE3F /* DashboardViewController.swift */,
+				51FB3B311E71123F008FC5B7 /* SignUpViewController.swift */,
+				5137D5951E726565006CCE3F /* DoctorViewController.swift */,
+				51FB3B0A1E710E45008FC5B7 /* Assets.xcassets */,
+				5137D5971E726DE9006CCE3F /* images */,
+				51FB3B0C1E710E45008FC5B7 /* LaunchScreen.storyboard */,
+				51FB3B0F1E710E45008FC5B7 /* Info.plist */,
+			);
+			path = DoctorPortal;
+			sourceTree = "<group>";
+		};
+		51FB3B171E710E47008FC5B7 /* DoctorPortalTests */ = {
+			isa = PBXGroup;
+			children = (
+				51FB3B181E710E47008FC5B7 /* DoctorPortalTests.swift */,
+				51FB3B1A1E710E47008FC5B7 /* Info.plist */,
+			);
+			path = DoctorPortalTests;
+			sourceTree = "<group>";
+		};
+		51FB3B221E710E47008FC5B7 /* DoctorPortalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				51FB3B231E710E47008FC5B7 /* DoctorPortalUITests.swift */,
+				51FB3B251E710E47008FC5B7 /* Info.plist */,
+			);
+			path = DoctorPortalUITests;
+			sourceTree = "<group>";
+		};
+		AE16A0CF187EFF637A496232 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C8964FE7299EA3DDF2C137B /* Pods_DoctorPortal.framework */,
+				44732F15C34E41815D415B1F /* Pods_DoctorPortalTests.framework */,
+				5B999FF87F1DB3AA1FC73824 /* Pods_DoctorPortalUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51FB3AFF1E710E43008FC5B7 /* DoctorPortal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51FB3B281E710E47008FC5B7 /* Build configuration list for PBXNativeTarget "DoctorPortal" */;
+			buildPhases = (
+				58A4A3A731E9C39B7FA59DF9 /* [CP] Check Pods Manifest.lock */,
+				51FB3AFC1E710E43008FC5B7 /* Sources */,
+				51FB3AFD1E710E43008FC5B7 /* Frameworks */,
+				51FB3AFE1E710E43008FC5B7 /* Resources */,
+				B3A5CCE3160260EBAF3DCE34 /* [CP] Embed Pods Frameworks */,
+				18539648A7365016013749B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoctorPortal;
+			productName = DoctorPortal;
+			productReference = 51FB3B001E710E43008FC5B7 /* DoctorPortal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51FB3B131E710E47008FC5B7 /* DoctorPortalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51FB3B2B1E710E47008FC5B7 /* Build configuration list for PBXNativeTarget "DoctorPortalTests" */;
+			buildPhases = (
+				1E5C7CA3DA3F3E18760FB733 /* [CP] Check Pods Manifest.lock */,
+				51FB3B101E710E47008FC5B7 /* Sources */,
+				51FB3B111E710E47008FC5B7 /* Frameworks */,
+				51FB3B121E710E47008FC5B7 /* Resources */,
+				DF5845724FE38425ED719D94 /* [CP] Embed Pods Frameworks */,
+				ED46B3E57CF1B55F63E31490 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51FB3B161E710E47008FC5B7 /* PBXTargetDependency */,
+			);
+			name = DoctorPortalTests;
+			productName = DoctorPortalTests;
+			productReference = 51FB3B141E710E47008FC5B7 /* DoctorPortalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		51FB3B1E1E710E47008FC5B7 /* DoctorPortalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51FB3B2E1E710E47008FC5B7 /* Build configuration list for PBXNativeTarget "DoctorPortalUITests" */;
+			buildPhases = (
+				6B1A2DB69900CE2A76378606 /* [CP] Check Pods Manifest.lock */,
+				51FB3B1B1E710E47008FC5B7 /* Sources */,
+				51FB3B1C1E710E47008FC5B7 /* Frameworks */,
+				51FB3B1D1E710E47008FC5B7 /* Resources */,
+				72253FE964DAB57E21C82429 /* [CP] Copy Pods Resources */,
+				90FBA71931D2D6E954D8DBCE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51FB3B211E710E47008FC5B7 /* PBXTargetDependency */,
+			);
+			name = DoctorPortalUITests;
+			productName = DoctorPortalUITests;
+			productReference = 51FB3B1F1E710E47008FC5B7 /* DoctorPortalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51FB3AF81E710E43008FC5B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "sadia masood";
+				TargetAttributes = {
+					51FB3AFF1E710E43008FC5B7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					51FB3B131E710E47008FC5B7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 51FB3AFF1E710E43008FC5B7;
+					};
+					51FB3B1E1E710E47008FC5B7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 51FB3AFF1E710E43008FC5B7;
+					};
+				};
+			};
+			buildConfigurationList = 51FB3AFB1E710E43008FC5B7 /* Build configuration list for PBXProject "DoctorPortal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51FB3AF71E710E43008FC5B7;
+			productRefGroup = 51FB3B011E710E43008FC5B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51FB3AFF1E710E43008FC5B7 /* DoctorPortal */,
+				51FB3B131E710E47008FC5B7 /* DoctorPortalTests */,
+				51FB3B1E1E710E47008FC5B7 /* DoctorPortalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51FB3AFE1E710E43008FC5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB99D1A41E77960100DBD005 /* Doctor1.jpg in Resources */,
+				5137D5821E71FA8F006CCE3F /* health-portal-icon.png in Resources */,
+				5137D5901E723B94006CCE3F /* lABrEPORT.png in Resources */,
+				5137D5801E71ED41006CCE3F /* doctorportal_300x200.png in Resources */,
+				5137D5921E723C2B006CCE3F /* aPPOINTMENT.png in Resources */,
+				51FB3B0E1E710E45008FC5B7 /* LaunchScreen.storyboard in Resources */,
+				51FB3B0B1E710E45008FC5B7 /* Assets.xcassets in Resources */,
+				5137D5861E722DC5006CCE3F /* Doctor.jpg in Resources */,
+				5137D5991E7271A5006CCE3F /* stars.png in Resources */,
+				51FB3B091E710E44008FC5B7 /* Main.storyboard in Resources */,
+				5137D5941E72516E006CCE3F /* SCHEDULE.png in Resources */,
+				5137D58A1E723661006CCE3F /* appointment-icon.jpg in Resources */,
+				5137D58C1E7236FC006CCE3F /* videoCall.jpg in Resources */,
+				5137D58E1E723812006CCE3F /* labReport.jpeg in Resources */,
+				51D246071E73BA38006F20B8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FB3B121E710E47008FC5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FB3B1D1E710E47008FC5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18539648A7365016013749B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E5C7CA3DA3F3E18760FB733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58A4A3A731E9C39B7FA59DF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1A2DB69900CE2A76378606 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72253FE964DAB57E21C82429 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90FBA71931D2D6E954D8DBCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A5CCE3160260EBAF3DCE34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5845724FE38425ED719D94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoctorPortalTests/Pods-DoctorPortalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED46B3E57CF1B55F63E31490 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoctorPortalTests/Pods-DoctorPortalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51FB3AFC1E710E43008FC5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB99D1A01E771B0600DBD005 /* CalendarViewController.swift in Sources */,
+				51FB3B321E71123F008FC5B7 /* SignUpViewController.swift in Sources */,
+				DB99D1A21E7779AF00DBD005 /* exampleViewController.swift in Sources */,
+				5137D5961E726565006CCE3F /* DoctorViewController.swift in Sources */,
+				51FB3B061E710E44008FC5B7 /* ViewController.swift in Sources */,
+				51FB3B041E710E43008FC5B7 /* AppDelegate.swift in Sources */,
+				5137D5841E722C78006CCE3F /* DashboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FB3B101E710E47008FC5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51FB3B191E710E47008FC5B7 /* DoctorPortalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FB3B1B1E710E47008FC5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51FB3B241E710E47008FC5B7 /* DoctorPortalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51FB3B161E710E47008FC5B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51FB3AFF1E710E43008FC5B7 /* DoctorPortal */;
+			targetProxy = 51FB3B151E710E47008FC5B7 /* PBXContainerItemProxy */;
+		};
+		51FB3B211E710E47008FC5B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51FB3AFF1E710E43008FC5B7 /* DoctorPortal */;
+			targetProxy = 51FB3B201E710E47008FC5B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51FB3B071E710E44008FC5B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51FB3B081E710E44008FC5B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51FB3B0C1E710E45008FC5B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51FB3B0D1E710E45008FC5B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51FB3B261E710E47008FC5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51FB3B271E710E47008FC5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51FB3B291E710E47008FC5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E18BFCE1C7A521E415F5FBE /* Pods-DoctorPortal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoctorPortal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		51FB3B2A1E710E47008FC5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoctorPortal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		51FB3B2C1E710E47008FC5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFCE14B4E88947D3A7A7A96 /* Pods-DoctorPortalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoctorPortalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorPortal.app/DoctorPortal";
+			};
+			name = Debug;
+		};
+		51FB3B2D1E710E47008FC5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09C0A45495F09F941E610668 /* Pods-DoctorPortalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoctorPortalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorPortal.app/DoctorPortal";
+			};
+			name = Release;
+		};
+		51FB3B2F1E710E47008FC5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31AF877F069E8647E8BD556 /* Pods-DoctorPortalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DoctorPortalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DoctorPortal;
+			};
+			name = Debug;
+		};
+		51FB3B301E710E47008FC5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB72713B710C801D598B9FC /* Pods-DoctorPortalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DoctorPortalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DoctorPortal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51FB3AFB1E710E43008FC5B7 /* Build configuration list for PBXProject "DoctorPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51FB3B261E710E47008FC5B7 /* Debug */,
+				51FB3B271E710E47008FC5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51FB3B281E710E47008FC5B7 /* Build configuration list for PBXNativeTarget "DoctorPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51FB3B291E710E47008FC5B7 /* Debug */,
+				51FB3B2A1E710E47008FC5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51FB3B2B1E710E47008FC5B7 /* Build configuration list for PBXNativeTarget "DoctorPortalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51FB3B2C1E710E47008FC5B7 /* Debug */,
+				51FB3B2D1E710E47008FC5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51FB3B2E1E710E47008FC5B7 /* Build configuration list for PBXNativeTarget "DoctorPortalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51FB3B2F1E710E47008FC5B7 /* Debug */,
+				51FB3B301E710E47008FC5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51FB3AF81E710E43008FC5B7 /* Project object */;
+}
