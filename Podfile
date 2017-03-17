@@ -10,6 +10,7 @@ target 'DoctorPortal' do
 pod ‘Firebase’
 pod ‘Firebase/Auth’
 pod 'Firebase/Database'
+pod 'Firebase/Messaging'
 
 # Pods for Facebook
 pod 'Bolts'
@@ -18,6 +19,7 @@ pod 'FBSDKLoginKit'
 
 # Pods for Calendar
 pod 'FSCalendar'
+pod 'ActionSheetPicker-3.0'
 
   target 'DoctorPortalTests' do
     inherit! :search_paths

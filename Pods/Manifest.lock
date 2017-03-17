@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -20,6 +21,9 @@ PODS:
   - Firebase/Database (3.14.0):
     - Firebase/Core
     - FirebaseDatabase (= 3.1.2)
+  - Firebase/Messaging (3.14.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 1.2.2)
   - FirebaseAnalytics (3.7.0):
     - FirebaseCore (~> 3.5)
     - FirebaseInstanceID (~> 1.0)
@@ -33,10 +37,17 @@ PODS:
   - FirebaseDatabase (3.1.2):
     - FirebaseAnalytics (~> 3.7)
   - FirebaseInstanceID (1.0.9)
+  - FirebaseMessaging (1.2.2):
+    - FirebaseAnalytics (~> 3.7)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
   - FSCalendar (2.7.3)
   - GoogleToolboxForMac/DebugUtils (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
@@ -45,17 +56,21 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
+  - Protobuf (3.2.0)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - Bolts
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase
   - Firebase/Auth
   - Firebase/Database
+  - Firebase/Messaging
   - FSCalendar
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 2d16979b28fe28c2b95af0d275ad5f9703c6c8de
   FBSDKLoginKit: a9d9391506c687e2304a590bf9312837fce7f375
@@ -65,10 +80,12 @@ SPEC CHECKSUMS:
   FirebaseCore: 225d40532489835a034b8f4e2c9c87fbf4f615a2
   FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
   FSCalendar: 574388d70778c22719eed9341653e1743b345573
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
 
-PODFILE CHECKSUM: 90acdd5d03bc83b9bf277c3446152be2341da3d5
+PODFILE CHECKSUM: 696f0697e999fd05ed88a08ba8e94ff238db0ae8
 
 COCOAPODS: 1.2.0

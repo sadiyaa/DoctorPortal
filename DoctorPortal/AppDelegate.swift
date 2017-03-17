@@ -9,20 +9,44 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import FirebaseMessaging
+import UserNotifications
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+   
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+       registerForRemoteNotification()
         FIRApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        
         return true
     }
+    func registerForRemoteNotification() {
+        if #available(iOS 10.0, *) {
+            let center  = UNUserNotificationCenter.current()
+           // center.delegate = self
+            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
+                if error == nil{
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+        }
+        else {
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+    }
+
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
         
@@ -52,7 +76,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("User Info = ",notification.request.content.userInfo)
+        completionHandler([.alert, .badge, .sound])
+    }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("User Info = ",response.notification.request.content.userInfo)
+        completionHandler()
+    }
+    
+    
 
 }
 

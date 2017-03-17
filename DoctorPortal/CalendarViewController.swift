@@ -24,6 +24,10 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         // Do any additional setup after loading the view.
     }
     
+    public func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition){
+        self.performSegue(withIdentifier: "popview", sender: self)
+    }
+    
     
     @IBAction func nextMonth(_ sender: Any) {
         

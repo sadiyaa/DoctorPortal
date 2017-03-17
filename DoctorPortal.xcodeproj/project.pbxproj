@@ -31,9 +31,12 @@
 		51FB3B191E710E47008FC5B7 /* DoctorPortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B181E710E47008FC5B7 /* DoctorPortalTests.swift */; };
 		51FB3B241E710E47008FC5B7 /* DoctorPortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B231E710E47008FC5B7 /* DoctorPortalUITests.swift */; };
 		51FB3B321E71123F008FC5B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B311E71123F008FC5B7 /* SignUpViewController.swift */; };
+		DB4B760D1E7A64CA0049DD89 /* facebook-login-button-png-11.png in Resources */ = {isa = PBXBuildFile; fileRef = DB4B760C1E7A64CA0049DD89 /* facebook-login-button-png-11.png */; };
+		DB4B760F1E7B0CDE0049DD89 /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B760E1E7B0CDE0049DD89 /* AppointmentCell.swift */; };
 		DB99D1A01E771B0600DBD005 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */; };
 		DB99D1A21E7779AF00DBD005 /* exampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */; };
 		DB99D1A41E77960100DBD005 /* Doctor1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB99D1A31E77960100DBD005 /* Doctor1.jpg */; };
+		DB99D1EE1E79AE5C00DBD005 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D1ED1E79AE5C00DBD005 /* AppointmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +91,13 @@
 		9E18BFCE1C7A521E415F5FBE /* Pods-DoctorPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal.debug.xcconfig"; sourceTree = "<group>"; };
 		BBB72713B710C801D598B9FC /* Pods-DoctorPortalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C31AF877F069E8647E8BD556 /* Pods-DoctorPortalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4B760C1E7A64CA0049DD89 /* facebook-login-button-png-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-login-button-png-11.png"; sourceTree = "<group>"; };
+		DB4B760E1E7B0CDE0049DD89 /* AppointmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
+		DB4D6FD31E7A338D00E71069 /* DoctorPortal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoctorPortal.entitlements; sourceTree = "<group>"; };
 		DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleViewController.swift; sourceTree = "<group>"; };
 		DB99D1A31E77960100DBD005 /* Doctor1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Doctor1.jpg; sourceTree = "<group>"; };
+		DB99D1ED1E79AE5C00DBD005 /* AppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 		EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortal.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal.release.xcconfig"; sourceTree = "<group>"; };
 		FBFCE14B4E88947D3A7A7A96 /* Pods-DoctorPortalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalTests/Pods-DoctorPortalTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +146,7 @@
 		5137D5971E726DE9006CCE3F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DB4B760C1E7A64CA0049DD89 /* facebook-login-button-png-11.png */,
 				5137D57F1E71ED41006CCE3F /* doctorportal_300x200.png */,
 				5137D5851E722DC5006CCE3F /* Doctor.jpg */,
 				5137D58B1E7236FC006CCE3F /* videoCall.jpg */,
@@ -179,10 +187,13 @@
 		51FB3B021E710E43008FC5B7 /* DoctorPortal */ = {
 			isa = PBXGroup;
 			children = (
+				DB4D6FD31E7A338D00E71069 /* DoctorPortal.entitlements */,
 				51D246061E73BA37006F20B8 /* GoogleService-Info.plist */,
 				51FB3B031E710E43008FC5B7 /* AppDelegate.swift */,
 				51FB3B051E710E44008FC5B7 /* ViewController.swift */,
+				DB4B760E1E7B0CDE0049DD89 /* AppointmentCell.swift */,
 				51FB3B071E710E44008FC5B7 /* Main.storyboard */,
+				DB99D1ED1E79AE5C00DBD005 /* AppointmentViewController.swift */,
 				DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */,
 				DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */,
 				5137D5831E722C78006CCE3F /* DashboardViewController.swift */,
@@ -301,7 +312,13 @@
 				TargetAttributes = {
 					51FB3AFF1E710E43008FC5B7 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8J758485KZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					51FB3B131E710E47008FC5B7 = {
 						CreatedOnToolsVersion = 8.0;
@@ -350,6 +367,7 @@
 				5137D5861E722DC5006CCE3F /* Doctor.jpg in Resources */,
 				5137D5991E7271A5006CCE3F /* stars.png in Resources */,
 				51FB3B091E710E44008FC5B7 /* Main.storyboard in Resources */,
+				DB4B760D1E7A64CA0049DD89 /* facebook-login-button-png-11.png in Resources */,
 				5137D5941E72516E006CCE3F /* SCHEDULE.png in Resources */,
 				5137D58A1E723661006CCE3F /* appointment-icon.jpg in Resources */,
 				5137D58C1E7236FC006CCE3F /* videoCall.jpg in Resources */,
@@ -517,6 +535,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB99D1EE1E79AE5C00DBD005 /* AppointmentViewController.swift in Sources */,
+				DB4B760F1E7B0CDE0049DD89 /* AppointmentCell.swift in Sources */,
 				DB99D1A01E771B0600DBD005 /* CalendarViewController.swift in Sources */,
 				51FB3B321E71123F008FC5B7 /* SignUpViewController.swift in Sources */,
 				DB99D1A21E7779AF00DBD005 /* exampleViewController.swift in Sources */,
@@ -676,6 +696,8 @@
 			baseConfigurationReference = 9E18BFCE1C7A521E415F5FBE /* Pods-DoctorPortal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoctorPortal/DoctorPortal.entitlements;
+				DEVELOPMENT_TEAM = 8J758485KZ;
 				INFOPLIST_FILE = DoctorPortal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortal;
@@ -689,6 +711,8 @@
 			baseConfigurationReference = EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoctorPortal/DoctorPortal.entitlements;
+				DEVELOPMENT_TEAM = 8J758485KZ;
 				INFOPLIST_FILE = DoctorPortal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortal;
