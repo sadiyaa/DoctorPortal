@@ -49,16 +49,18 @@ class ViewController: UIViewController {
             
             FIRAuth.auth()?.signIn(withEmail: self.UserName.text!, password: self.Password.text!) { (user, error) in
                 
-                if error == nil {
-                    
-                    //Print into the console if successfully logged in
+               if error == nil {
+//                    
+//                    //Print into the console if successfully logged in
                     print("You have successfully logged in")
-                    
-                    //Go to the HomeViewController if the login is sucessful
-//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
-//                    self.present(vc!, animated: true, completion: nil)
+//                    
+//                    //Go to the HomeViewController if the login is sucessful
+////                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+////                    self.present(vc!, animated: true, completion: nil)
                     self.performSegue(withIdentifier: "Home", sender: self)
-                    
+                
+                
+//                    
                 } else {
                     
                     //Tells the user that there is an error and then gets firebase to tell them the error

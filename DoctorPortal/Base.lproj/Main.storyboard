@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="z6t-B1-e9K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v7i-FX-wwR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -264,6 +264,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-ko-ykj">
+                                <rect key="frame" x="10" y="431" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="patientdoctor:" destination="v7i-FX-wwR" eventType="touchUpInside" id="u0G-q7-TsA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28503602743148804" green="0.67220205068588257" blue="0.91534525156021118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -304,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXb-US-OiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="806"/>
+            <point key="canvasLocation" x="1640.8" y="805.54722638680664"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="VUi-IK-BxN">
@@ -372,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRT-OI-km4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="806"/>
+            <point key="canvasLocation" x="2412" y="993"/>
         </scene>
         <!--Appointment View Controller-->
         <scene sceneID="WD4-8b-g6a">
@@ -438,15 +447,26 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:00        to       9:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-c2-uSW">
-                                                            <rect key="frame" x="31" y="191" width="211" height="33"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMN-Hd-J5W">
+                                                            <rect key="frame" x="25" y="178" width="211" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sow-fc-R9K">
+                                                            <rect key="frame" x="8" y="20" width="77" height="24"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="sendText:" destination="0Xb-Ye-vYY" eventType="touchUpInside" id="Sp3-4h-8Wu"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="phoneNumber" destination="qMN-Hd-J5W" id="u89-BZ-PMU"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -482,59 +502,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PD6-j8-KPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3248.8000000000002" y="789.35532233883066"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ErA-Gh-O3z">
-            <objects>
-                <viewController id="dH0-F3-moP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2RS-5l-lQZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZEH-IM-Uf8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jW9-5y-1IX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-di-d9A">
-                                <rect key="frame" x="-20" y="139" width="415" height="548"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEt-UG-L5d">
-                                        <rect key="frame" x="20" y="20" width="375" height="508"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Dr. Rajiv Aggarwal has been practicing medicine for over 16 years. Not only has this experience enhanced his medical proficiency, but also given him the insight with which he cares for each patient. 
-
-Dr. Aggarwal received his medical education at the Armed Forces Medical College in Pune, India in 1988. After completing his residency at SUNY at Buffalo, NY in 2000, Dr. Aggarwal established his office in Lansdowne, VA in 2004. After 3 years, he expanded his primary care to Reston, VA. He is affiliated with the AMA, AAFP, AAPI, MSV and is Board Certified Family Practitioner. Dr. Aggarwal also perform Travel Immunizations and Immigration Physicals.
-
-QUALIFICATION:
-
-Education     Medical School - Armed Forces Medical College
-State University of New York at Buffalo (Residency)       Languages Spoken    English  </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="sEt-UG-L5d" secondAttribute="trailing" constant="20" id="HYE-4b-yEs"/>
-                                    <constraint firstAttribute="bottom" secondItem="sEt-UG-L5d" secondAttribute="bottom" constant="20" id="II7-Ca-Usa"/>
-                                    <constraint firstItem="sEt-UG-L5d" firstAttribute="leading" secondItem="Rge-di-d9A" secondAttribute="leading" constant="20" id="iyr-nh-Vzf"/>
-                                    <constraint firstItem="sEt-UG-L5d" firstAttribute="top" secondItem="Rge-di-d9A" secondAttribute="top" constant="20" id="lK0-cs-99F"/>
-                                    <constraint firstItem="sEt-UG-L5d" firstAttribute="centerX" secondItem="Rge-di-d9A" secondAttribute="centerX" id="niF-6s-Per"/>
-                                    <constraint firstItem="sEt-UG-L5d" firstAttribute="centerY" secondItem="Rge-di-d9A" secondAttribute="centerY" id="xYr-hi-U6v"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Rge-di-d9A" firstAttribute="leading" secondItem="jW9-5y-1IX" secondAttribute="leadingMargin" constant="-36" id="4Oi-vc-vPM"/>
-                            <constraint firstItem="Rge-di-d9A" firstAttribute="top" secondItem="2RS-5l-lQZ" secondAttribute="bottom" constant="119" id="8Lz-KJ-0bM"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Rge-di-d9A" secondAttribute="bottom" constant="-20" id="Vgy-kp-MmS"/>
-                            <constraint firstItem="Rge-di-d9A" firstAttribute="centerX" secondItem="jW9-5y-1IX" secondAttribute="centerX" id="WCX-bM-dq9"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I3I-Bb-pV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2386" y="-672"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="Uer-4r-efT">
@@ -661,7 +628,58 @@ State University of New York at Buffalo (Residency)       Languages Spoken    En
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyO-Gk-E6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="62"/>
+            <point key="canvasLocation" x="1820" y="62"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="tei-z4-Aux">
+            <objects>
+                <tableViewController id="BcN-UU-Qgt" customClass="TableViewController" customModule="DoctorPortal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="223" sectionHeaderHeight="28" sectionFooterHeight="28" id="rG4-kr-hUc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="223" id="UzI-3t-LbR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="223"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UzI-3t-LbR" id="lcq-Us-eY9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DG8-CD-LVh">
+                                            <rect key="frame" x="47" y="42" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdA-0f-mbU">
+                                            <rect key="frame" x="217" y="42" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-Ui-YfK">
+                                            <rect key="frame" x="122" y="116" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BcN-UU-Qgt" id="OpP-df-wDc"/>
+                            <outlet property="delegate" destination="BcN-UU-Qgt" id="Tts-g0-lAM"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feS-KN-FQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562" y="-614"/>
         </scene>
         <!--Doctor View Controller-->
         <scene sceneID="7ek-KL-4jQ">
@@ -807,7 +825,7 @@ State University of New York at Buffalo (Residency)       Languages Spoken    En
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68y-er-KzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2694" y="62"/>
+            <point key="canvasLocation" x="2631" y="242"/>
         </scene>
     </scenes>
     <resources>

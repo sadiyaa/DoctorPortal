@@ -33,8 +33,8 @@
 		51FB3B321E71123F008FC5B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3B311E71123F008FC5B7 /* SignUpViewController.swift */; };
 		DB4B760D1E7A64CA0049DD89 /* facebook-login-button-png-11.png in Resources */ = {isa = PBXBuildFile; fileRef = DB4B760C1E7A64CA0049DD89 /* facebook-login-button-png-11.png */; };
 		DB4B760F1E7B0CDE0049DD89 /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B760E1E7B0CDE0049DD89 /* AppointmentCell.swift */; };
+		DB4B76651E7E4E760049DD89 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B76641E7E4E760049DD89 /* TableViewController.swift */; };
 		DB99D1A01E771B0600DBD005 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */; };
-		DB99D1A21E7779AF00DBD005 /* exampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */; };
 		DB99D1A41E77960100DBD005 /* Doctor1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB99D1A31E77960100DBD005 /* Doctor1.jpg */; };
 		DB99D1EE1E79AE5C00DBD005 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D1ED1E79AE5C00DBD005 /* AppointmentViewController.swift */; };
 /* End PBXBuildFile section */
@@ -93,9 +93,9 @@
 		C31AF877F069E8647E8BD556 /* Pods-DoctorPortalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortalUITests/Pods-DoctorPortalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB4B760C1E7A64CA0049DD89 /* facebook-login-button-png-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-login-button-png-11.png"; sourceTree = "<group>"; };
 		DB4B760E1E7B0CDE0049DD89 /* AppointmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
+		DB4B76641E7E4E760049DD89 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DB4D6FD31E7A338D00E71069 /* DoctorPortal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoctorPortal.entitlements; sourceTree = "<group>"; };
 		DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleViewController.swift; sourceTree = "<group>"; };
 		DB99D1A31E77960100DBD005 /* Doctor1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Doctor1.jpg; sourceTree = "<group>"; };
 		DB99D1ED1E79AE5C00DBD005 /* AppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 		EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPortal.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoctorPortal/Pods-DoctorPortal.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 				51FB3B051E710E44008FC5B7 /* ViewController.swift */,
 				DB4B760E1E7B0CDE0049DD89 /* AppointmentCell.swift */,
 				51FB3B071E710E44008FC5B7 /* Main.storyboard */,
+				DB4B76641E7E4E760049DD89 /* TableViewController.swift */,
 				DB99D1ED1E79AE5C00DBD005 /* AppointmentViewController.swift */,
-				DB99D1A11E7779AF00DBD005 /* exampleViewController.swift */,
 				DB99D19F1E771B0600DBD005 /* CalendarViewController.swift */,
 				5137D5831E722C78006CCE3F /* DashboardViewController.swift */,
 				51FB3B311E71123F008FC5B7 /* SignUpViewController.swift */,
@@ -539,10 +539,10 @@
 				DB4B760F1E7B0CDE0049DD89 /* AppointmentCell.swift in Sources */,
 				DB99D1A01E771B0600DBD005 /* CalendarViewController.swift in Sources */,
 				51FB3B321E71123F008FC5B7 /* SignUpViewController.swift in Sources */,
-				DB99D1A21E7779AF00DBD005 /* exampleViewController.swift in Sources */,
 				5137D5961E726565006CCE3F /* DoctorViewController.swift in Sources */,
 				51FB3B061E710E44008FC5B7 /* ViewController.swift in Sources */,
 				51FB3B041E710E43008FC5B7 /* AppDelegate.swift in Sources */,
+				DB4B76651E7E4E760049DD89 /* TableViewController.swift in Sources */,
 				5137D5841E722C78006CCE3F /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

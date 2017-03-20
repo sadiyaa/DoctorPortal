@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import ActionSheetPicker_3_0
 
 class SignUpViewController: UIViewController {
 
@@ -25,6 +26,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet var ConfirmPassword: UITextField!
     
+    @IBOutlet var patient: UITextField!
     
     @IBOutlet weak var labelMessage: UILabel!
     
@@ -47,16 +49,41 @@ class SignUpViewController: UIViewController {
                 var ref: FIRDatabaseReference!
                 
                 ref = FIRDatabase.database().reference()
-                ref.child("users/(user.uid)/firstname").setValue(self.firstName.text)
+                let usersRef = ref.child("users")
+                let userRef = usersRef.child((user?.uid)!)
+                let userFirstName = userRef.child("firstname")
+                userFirstName.setValue(self.firstName.text)
+                let lastName = userRef.child("lastname")
+                lastName.setValue(self.lastName.text)
+                let dateofbirth = userRef.child("dateofbirth")
+                dateofbirth.setValue(self.DOB.text)
+                let emailAddress = userRef.child("emailAddress")
+                emailAddress.setValue(self.email.text)
+                let patient = userRef.child("patient")
+                patient.setValue(self.patient.text)
             }else{
                 self.labelMessage.text = "Registration Failed.. Please Try Again"
             }
             
         })
+        
     }
     
         
-    
+    @IBAction func patientdoctor(_ sender: UIButton) {
+        
+        ActionSheetMultipleStringPicker.show(withTitle: "Multiple String Picker", rows: [
+            ["Doctor", "Patient"],
+            ["Many", "Many more", "Infinite"]
+            ], initialSelection: [2, 2], doneBlock: {
+                picker, values, indexes in
+                
+                print("values = \(values)")
+                print("indexes = \(indexes)")
+                print("picker = \(picker)")
+                return
+        }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
