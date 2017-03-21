@@ -59,8 +59,8 @@ class SignUpViewController: UIViewController {
                 dateofbirth.setValue(self.DOB.text)
                 let emailAddress = userRef.child("emailAddress")
                 emailAddress.setValue(self.email.text)
-                let patient = userRef.child("patient")
-                patient.setValue(self.patient.text)
+//                let patient = userRef.child("patient")
+//                patient.setValue(self.patient.text)
             }else{
                 self.labelMessage.text = "Registration Failed.. Please Try Again"
             }
