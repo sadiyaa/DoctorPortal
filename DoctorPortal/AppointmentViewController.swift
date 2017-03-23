@@ -16,6 +16,16 @@ class AppointmentViewController: UIViewController,UITableViewDataSource,UITableV
     
     @IBOutlet var Tableview: UITableView!
     
+    var date = NSDate()
+    
+    
+    
+    
+    @IBOutlet var label: UILabel!
+    
+    var appointments = NSArray()
+    
+    
     
     
    
@@ -26,6 +36,8 @@ override func viewDidLoad() {
     
    Tableview.reloadData()
     
+    
+    
         
 
         // Do any additional setup after loading the view.
@@ -34,7 +46,7 @@ override func viewDidLoad() {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
-        return 1;
+        return 1
         
     }
     
@@ -64,13 +76,13 @@ override func viewDidLoad() {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
        
-        
-       let alertController = UIAlertController(title: "Appointment", message: "Your Appointment has been scheduled.", preferredStyle: .alert)
-        
-        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        alertController.addAction(defaultAction)
-        
-       self.present(alertController, animated: true, completion: nil)
+//        
+//       let alertController = UIAlertController(title: "Appointment", message: "Your Appointment has been scheduled.", preferredStyle: .alert)
+//        
+//        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//        alertController.addAction(defaultAction)
+//        
+//       self.present(alertController, animated: true, completion: nil)
 //
         
         
@@ -112,7 +124,7 @@ override func viewDidLoad() {
             let controller = MFMessageComposeViewController()
             let phoneNumer = String()
             
-            controller.body = "Sadia Masood would like to schedule Appointment @ 3:30pm"
+            controller.body = label.text
             controller.recipients = ["7037328391"]
             controller.messageComposeDelegate = self
             self.present(controller, animated: true, completion: nil)
