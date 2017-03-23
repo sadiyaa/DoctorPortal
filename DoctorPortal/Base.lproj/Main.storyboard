@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v7i-FX-wwR">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vP3-Ly-8Gv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -257,22 +257,19 @@
                                     <action selector="SignUp:" destination="v7i-FX-wwR" eventType="touchUpInside" id="j3l-pT-Zoj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-33-1Y5">
-                                <rect key="frame" x="103" y="488" width="169" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-ko-ykj">
                                 <rect key="frame" x="16" y="574" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="patientdoctor:" destination="v7i-FX-wwR" eventType="touchUpInside" id="u0G-q7-TsA"/>
-                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-33-1Y5">
+                                <rect key="frame" x="103" y="520" width="169" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28503602743148804" green="0.67220205068588257" blue="0.91534525156021118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -309,6 +306,7 @@
                         <outlet property="labelMessage" destination="dpl-33-1Y5" id="zbd-tH-QLR"/>
                         <outlet property="lastName" destination="gAd-N4-1p5" id="73c-CG-gXY"/>
                         <outlet property="password" destination="NNK-87-4xk" id="MS8-ZJ-MUw"/>
+                        <outlet property="patientDoctor" destination="yqb-ko-ykj" id="0LQ-NS-EzA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXb-US-OiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -430,42 +428,28 @@
                                                 <rect key="frame" x="0.0" y="28" width="273" height="226"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Xb-Ye-vYY" id="APK-ZQ-FAe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="225.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="225"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:00        to       9:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM7-4b-xIE">
-                                                            <rect key="frame" x="25" y="52" width="211" height="33"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:00    9:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-tp-3Lr">
+                                                            <rect key="frame" x="54" y="19" width="161" height="33"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:00        to       9:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-tp-3Lr">
-                                                            <rect key="frame" x="31" y="125" width="211" height="33"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:30  10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzo-mh-KTS">
+                                                            <rect key="frame" x="94" y="77" width="90" height="35"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMN-Hd-J5W">
-                                                            <rect key="frame" x="25" y="178" width="211" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sow-fc-R9K">
-                                                            <rect key="frame" x="8" y="20" width="77" height="24"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <connections>
-                                                                <action selector="sendText:" destination="0Xb-Ye-vYY" eventType="touchUpInside" id="Sp3-4h-8Wu"/>
-                                                            </connections>
-                                                        </button>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="phoneNumber" destination="qMN-Hd-J5W" id="u89-BZ-PMU"/>
+                                                    <outlet property="date" destination="kv7-tp-3Lr" id="eNE-LN-FWH"/>
+                                                    <outlet property="date2" destination="mzo-mh-KTS" id="pA7-1t-A4r"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -474,6 +458,14 @@
                                             <outlet property="delegate" destination="yQz-i4-UMt" id="CQR-Tr-fKH"/>
                                         </connections>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sow-fc-R9K">
+                                        <rect key="frame" x="62" y="359" width="165" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Schedule Appointment"/>
+                                        <connections>
+                                            <action selector="scheduleAppointment:" destination="yQz-i4-UMt" eventType="touchUpInside" id="dhV-cN-cYu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.28503602743148804" green="0.67220205068588257" blue="0.91534525156021118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -643,7 +635,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="223"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UzI-3t-LbR" id="lcq-Us-eY9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DG8-CD-LVh">
@@ -746,14 +738,14 @@
                                                     <constraint firstAttribute="width" constant="340" id="XH3-ox-LTX"/>
                                                     <constraint firstAttribute="height" constant="389" id="ezU-pL-CXx"/>
                                                 </constraints>
-                                                <string key="text">Dr. Rajiv Aggarwal has been practicing medicine for over 16 years. Not only has this experience enhanced his medical proficiency, but also given him the insight with which he cares for each patient. 
+                                                <mutableString key="text">Dr. Rajiv Aggarwal has been practicing medicine for over 16 years. Not only has this experience enhanced his medical proficiency, but also given him the insight with which he cares for each patient. 
 
-Dr. Aggarwal received his medical education at the Armed Forces Medical College in Pune, India in 1988. After completing his residency at SUNY at Buffalo, NY in 2000, Dr. Aggarwal established his office in Lansdowne, VA in 2004. After 3 years, he expanded his primary care to Reston, VA. He is affiliated with the AMA, AAFP, AAPI, MSV and is Board Certified Family Practitioner. Dr. Aggarwal also perform Travel Immunizations and Immigration Physicals.</string>
+Dr. Aggarwal received his medical education at the Armed Forces Medical College in Pune, India in 1988. After completing his residency at SUNY at Buffalo, NY in 2000, Dr. Aggarwal established his office in Lansdowne, VA in 2004. After 3 years, he expanded his primary care to Reston, VA. He is affiliated with the AMA, AAFP, AAPI, MSV and is Board Certified Family Practitioner. Dr. Aggarwal also perform Travel Immunizations and Immigration Physicals.</mutableString>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qualification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-tA-pDh">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-tA-pDh">
                                                 <rect key="frame" x="29" y="539" width="187" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="dgL-zU-Q2T"/>
@@ -762,10 +754,8 @@ Dr. Aggarwal received his medical education at the Armed Forces Medical College 
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-Pn-H1b">
-                                                <rect key="frame" x="29" y="597" width="313" height="97.5"/>
-                                                <string key="text">Education     Medical School - Armed Forces Medical College
-State University of New York at Buffalo (Residency)       Languages Spoken    English        </string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-Pn-H1b">
+                                                <rect key="frame" x="29" y="597" width="313" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Italic" family="Verdana" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -825,7 +815,7 @@ State University of New York at Buffalo (Residency)       Languages Spoken    En
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68y-er-KzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631" y="242"/>
+            <point key="canvasLocation" x="2629.5999999999999" y="241.52923538230885"/>
         </scene>
     </scenes>
     <resources>

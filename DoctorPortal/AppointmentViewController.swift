@@ -12,7 +12,7 @@ import FSCalendar
 import MessageUI
 
 
-class AppointmentViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class AppointmentViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet var Tableview: UITableView!
     
@@ -106,6 +106,25 @@ override func viewDidLoad() {
     
     
    
+    @IBAction func scheduleAppointment(_ sender: UIButton) {
+        
+        if (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            let phoneNumer = String()
+            
+            controller.body = "Sadia Masood would like to schedule Appointment @ 3:30pm"
+            controller.recipients = ["7037328391"]
+            controller.messageComposeDelegate = self
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        //... handle sms screen actions
+        self.dismiss(animated: true, completion: nil)
+    }
+        
+    
         
         
     

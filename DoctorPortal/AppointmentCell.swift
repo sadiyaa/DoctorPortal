@@ -8,33 +8,49 @@
 
 import UIKit
 import MessageUI
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+import ActionSheetPicker_3_0
 
-class AppointmentCell: UITableViewCell,MFMessageComposeViewControllerDelegate {
+class AppointmentCell: UITableViewCell {
     
    
+  
     
-    @IBOutlet var phoneNumber: UITextField!
+    @IBOutlet var date: UILabel!
 
+    @IBOutlet var date2: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-    
-    @IBAction func sendText(_ sender: UIButton) {
         
-        if (MFMessageComposeViewController.canSendText()) {
-            let controller = MFMessageComposeViewController()
-            controller.body = "Message Body"
-            controller.recipients = [phoneNumber.text!]
-            controller.messageComposeDelegate = self
-           
-        }
+        var ref: FIRDatabaseReference!
+        
+        ref = FIRDatabase.database().reference()
+        
+        let appointment = ref.child("Appoinemnt")
+        
+        let newappointment = appointment.childByAutoId()
+        let AppointmentDate = appointment.child("AppointmentDate")
+        AppointmentDate.setValue(self.date.text)
+        AppointmentDate.setValue(self.date2.text)
+        let userId = FIRAuth.auth()?.currentUser?.uid
+        let appointmentUserId = newappointment.child("userId");
+        appointmentUserId.setValue(userId);
+        
+        
     }
     
-    func messageComposeViewController(_ controller: MFMessageComposeViewController!, didFinishWith result: MessageComposeResult) {
-        //... handle sms screen actions
-        //self.dismiss(animated: true, completion: nil)
-    }
+    
+    @IBAction func startdate(_ sender: UIButton) {
+    
+//    
+//ActionSheetDatePicker.show(withTitle: "selectdate", datePickerMode: <#T##UIDatePickerMode#>, selectedDate:NSDate, doneBlock: <#T##ActionDateDoneBlock!##ActionDateDoneBlock!##(ActionSheetDatePicker?, Any?, Any?) -> Void#>, cancel: <#T##ActionDateCancelBlock!##ActionDateCancelBlock!##(ActionSheetDatePicker?) -> Void#>, origin: <#T##UIView!#>)
+    
+        }
+    
+   
     
     
     

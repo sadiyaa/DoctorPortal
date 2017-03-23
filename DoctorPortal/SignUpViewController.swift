@@ -26,7 +26,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet var ConfirmPassword: UITextField!
     
-    @IBOutlet var patient: UITextField!
+    
+    @IBOutlet var patientDoctor: UIButton!
     
     @IBOutlet weak var labelMessage: UILabel!
     
@@ -71,18 +72,20 @@ class SignUpViewController: UIViewController {
     
         
     @IBAction func patientdoctor(_ sender: UIButton) {
+       
+//   var colors: [String] = ["Red", "Green", "Blue", "Orange"]
+//   
+//        ActionSheetStringPicker.show(withTitle: "Select Leave Type", rows: colors: initialSelection: 0, doneBlock: {(_ picker: ActionSheetStringPicker, _ selectedIndex: Int, id selectedvalue) -> Void in
+//    
+//    
+//    self.patientDoctor.setTitle(selectedValue, for: .normal)
+//    
+//    _leaveType = selectedValue
+//    
+//    
+//}, cancelBlock: {(_ picker: ActionSheetStringPicker) -> Void in
+//}, origin: sender)
         
-        ActionSheetMultipleStringPicker.show(withTitle: "Multiple String Picker", rows: [
-            ["Doctor", "Patient"],
-            ["Many", "Many more", "Infinite"]
-            ], initialSelection: [2, 2], doneBlock: {
-                picker, values, indexes in
-                
-                print("values = \(values)")
-                print("indexes = \(indexes)")
-                print("picker = \(picker)")
-                return
-        }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
     }
 
     override func didReceiveMemoryWarning() {

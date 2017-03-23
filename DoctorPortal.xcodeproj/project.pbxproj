@@ -313,10 +313,10 @@
 					51FB3AFF1E710E43008FC5B7 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8J758485KZ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -696,12 +696,13 @@
 			baseConfigurationReference = 9E18BFCE1C7A521E415F5FBE /* Pods-DoctorPortal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DoctorPortal/DoctorPortal.entitlements;
 				DEVELOPMENT_TEAM = 8J758485KZ;
 				INFOPLIST_FILE = DoctorPortal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ce86de72-7ad9-4799-98e7-cf7a151c3586";
+				PROVISIONING_PROFILE_SPECIFIER = dp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -711,12 +712,13 @@
 			baseConfigurationReference = EA155DB384DCEB005589720A /* Pods-DoctorPortal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DoctorPortal/DoctorPortal.entitlements;
 				DEVELOPMENT_TEAM = 8J758485KZ;
 				INFOPLIST_FILE = DoctorPortal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknologypartner.DoctorPortals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ce86de72-7ad9-4799-98e7-cf7a151c3586";
+				PROVISIONING_PROFILE_SPECIFIER = dp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
