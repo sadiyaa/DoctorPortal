@@ -12,6 +12,7 @@ import FSCalendar
 import MessageUI
 
 
+
 class AppointmentViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet var Tableview: UITableView!
@@ -21,7 +22,7 @@ class AppointmentViewController: UIViewController,UITableViewDataSource,UITableV
     
     
     
-    @IBOutlet var label: UILabel!
+   
     
     var appointments = NSArray()
     

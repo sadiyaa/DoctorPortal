@@ -26,12 +26,15 @@ class AppointmentCell: UITableViewCell, UIPickerViewDelegate,UIPickerViewDataSou
     
    var pickerData: [String] = [String]()
     
+    var viewcontroller = UIViewController()
+    
+    
 
    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+       
         picker?.delegate = self
         picker?.dataSource = self
          picker = UIPickerView()
@@ -87,7 +90,7 @@ class AppointmentCell: UITableViewCell, UIPickerViewDelegate,UIPickerViewDataSou
             let controller = MFMessageComposeViewController()
             let phoneNumer = String()
             
-            controller.body = ""
+            controller.body = label.text
             controller.recipients = ["7037328391"]
             controller.messageComposeDelegate = self
           // self.present(controller, animated: true, completion: nil)
