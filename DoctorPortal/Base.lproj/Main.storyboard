@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vP3-Ly-8Gv">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vP3-Ly-8Gv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -428,7 +428,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="273" height="226"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Xb-Ye-vYY" id="APK-ZQ-FAe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="225"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="225.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNA-zL-HLt">
@@ -633,7 +633,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="223"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UzI-3t-LbR" id="lcq-Us-eY9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DG8-CD-LVh">
@@ -736,9 +736,9 @@
                                                     <constraint firstAttribute="width" constant="340" id="XH3-ox-LTX"/>
                                                     <constraint firstAttribute="height" constant="389" id="ezU-pL-CXx"/>
                                                 </constraints>
-                                                <mutableString key="text">Dr. Rajiv Aggarwal has been practicing medicine for over 16 years. Not only has this experience enhanced his medical proficiency, but also given him the insight with which he cares for each patient. 
+                                                <string key="text">Dr. Rajiv Aggarwal has been practicing medicine for over 16 years. Not only has this experience enhanced his medical proficiency, but also given him the insight with which he cares for each patient. 
 
-Dr. Aggarwal received his medical education at the Armed Forces Medical College in Pune, India in 1988. After completing his residency at SUNY at Buffalo, NY in 2000, Dr. Aggarwal established his office in Lansdowne, VA in 2004. After 3 years, he expanded his primary care to Reston, VA. He is affiliated with the AMA, AAFP, AAPI, MSV and is Board Certified Family Practitioner. Dr. Aggarwal also perform Travel Immunizations and Immigration Physicals.</mutableString>
+Dr. Aggarwal received his medical education at the Armed Forces Medical College in Pune, India in 1988. After completing his residency at SUNY at Buffalo, NY in 2000, Dr. Aggarwal established his office in Lansdowne, VA in 2004. After 3 years, he expanded his primary care to Reston, VA. He is affiliated with the AMA, AAFP, AAPI, MSV and is Board Certified Family Practitioner. Dr. Aggarwal also perform Travel Immunizations and Immigration Physicals.</string>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>

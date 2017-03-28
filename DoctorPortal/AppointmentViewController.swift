@@ -10,7 +10,8 @@ import UIKit
 import ActionSheetPicker_3_0
 import FSCalendar
 import MessageUI
-
+import Firebase
+import FirebaseAuth
 
 
 class AppointmentViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, MFMessageComposeViewControllerDelegate {
@@ -125,10 +126,30 @@ override func viewDidLoad() {
             let controller = MFMessageComposeViewController()
             let phoneNumer = String()
             
-            controller.body = label.text
-            controller.recipients = ["7037328391"]
-            controller.messageComposeDelegate = self
-            self.present(controller, animated: true, completion: nil)
+            let userID = FIRAuth.auth()?.currentUser?.uid
+            var ref: FIRDatabaseReference!
+            
+            ref = FIRDatabase.database().reference()
+
+            ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                let value = snapshot.value as? NSDictionary
+                let username = value?["username"] as? String ?? ""
+                
+                
+                let date = "14/05/2017"
+                controller.body = String(format: "%@ want to schedule an appointment with you on date: %@", username, date);
+                controller.recipients = ["7037328391"]
+                controller.messageComposeDelegate = self
+                self.present(controller, animated: true, completion: nil)
+                
+                // ...
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+            
+            
+           
         }
     }
     
